@@ -1,232 +1,239 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1260" viewBox="0 0 1500 1260" font-family="WenQuanYi Micro Hei, Droid Sans Fallback, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1700" viewBox="0 0 1100 1700" font-family="WenQuanYi Micro Hei, Droid Sans Fallback, sans-serif">
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M0,0 L10,5 L0,10 z" fill="#37474F"/>
     </marker>
-    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#C62828"/>
-    </marker>
-    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/>
-    </marker>
     <linearGradient id="gradPerception" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1976D2"/>
-      <stop offset="100%" stop-color="#42A5F5"/>
+      <stop offset="0%" stop-color="#1976D2"/><stop offset="100%" stop-color="#42A5F5"/>
     </linearGradient>
     <linearGradient id="gradCognition" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7B1FA2"/>
-      <stop offset="100%" stop-color="#AB47BC"/>
+      <stop offset="0%" stop-color="#7B1FA2"/><stop offset="100%" stop-color="#AB47BC"/>
     </linearGradient>
     <linearGradient id="gradDecision" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#E65100"/>
-      <stop offset="100%" stop-color="#FB8C00"/>
+      <stop offset="0%" stop-color="#E65100"/><stop offset="100%" stop-color="#FB8C00"/>
     </linearGradient>
     <linearGradient id="gradApp" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2E7D32"/>
-      <stop offset="100%" stop-color="#66BB6A"/>
+      <stop offset="0%" stop-color="#2E7D32"/><stop offset="100%" stop-color="#66BB6A"/>
     </linearGradient>
   </defs>
 
-  <text x="750" y="42" text-anchor="middle" font-size="26" font-weight="bold" fill="#1A237E">基于多模态大模型与异构数据融合的师范生能力画像智能体 · 技术路线图</text>
-  <line x1="250" y1="56" x2="1250" y2="56" stroke="#1A237E" stroke-width="2"/>
+  <!-- ========== 标题 ========== -->
+  <text x="550" y="48" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A237E">
+    基于多模态大模型与异构数据融合的师范生能力
+  </text>
+  <text x="550" y="82" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A237E">
+    画像智能体 · 技术路线图
+  </text>
+  <line x1="180" y1="96" x2="920" y2="96" stroke="#1A237E" stroke-width="2.5"/>
 
-  <rect x="40" y="80" width="1420" height="120" rx="10" ry="10" fill="#ECEFF1" stroke="#455A64" stroke-width="1.5"/>
-  <text x="60" y="108" font-size="16" font-weight="bold" fill="#263238">数据源:依托申报人已研发的师范生教育教学能力认定抽检系统(真实业务 + 脱敏数据)</text>
+  <!-- ========== 数据源层（2×2 紧凑排列） ========== -->
+  <rect x="30" y="115" width="1040" height="175" rx="10" ry="10" fill="#ECEFF1" stroke="#455A64" stroke-width="2"/>
+  <text x="50" y="144" font-size="19" font-weight="bold" fill="#263238">数据源:依托已研发的师范生教育教学能力认定抽检系统(真实业务 + 脱敏数据)</text>
 
-  <rect x="80" y="125" width="300" height="60" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.3"/>
-  <text x="230" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">PDF 举证材料</text>
-  <text x="230" y="172" text-anchor="middle" font-size="12" fill="#37474F">教学设计 / 教学反思 / 作业设计</text>
+  <rect x="60" y="160" width="490" height="55" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.5"/>
+  <text x="305" y="185" text-anchor="middle" font-size="17" font-weight="bold" fill="#263238">PDF 举证材料</text>
+  <text x="305" y="205" text-anchor="middle" font-size="15" fill="#37474F">教学设计 / 教学反思 / 作业设计</text>
 
-  <rect x="400" y="125" width="300" height="60" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.3"/>
-  <text x="550" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">MP4 微格教学视频</text>
-  <text x="550" y="172" text-anchor="middle" font-size="12" fill="#37474F">教师行为 / 语音 / 板书与 PPT 画面</text>
+  <rect x="560" y="160" width="490" height="55" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.5"/>
+  <text x="805" y="185" text-anchor="middle" font-size="17" font-weight="bold" fill="#263238">MP4 微格教学视频</text>
+  <text x="805" y="205" text-anchor="middle" font-size="15" fill="#37474F">教师行为 / 语音 / 板书与 PPT 画面</text>
 
-  <rect x="720" y="125" width="300" height="60" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.3"/>
-  <text x="870" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">多专家评分</text>
-  <text x="870" y="172" text-anchor="middle" font-size="12" fill="#37474F">等级制 / 分数制 · 多对多评审配置</text>
+  <rect x="60" y="222" width="490" height="55" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.5"/>
+  <text x="305" y="247" text-anchor="middle" font-size="17" font-weight="bold" fill="#263238">多专家评分</text>
+  <text x="305" y="267" text-anchor="middle" font-size="15" fill="#37474F">等级制 / 分数制 · 多对多评审配置</text>
 
-  <rect x="1040" y="125" width="380" height="60" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.3"/>
-  <text x="1230" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#263238">专家评审意见 + 指标体系</text>
-  <text x="1230" y="172" text-anchor="middle" font-size="12" fill="#37474F">自由文本意见 · 一/二级指标 · 材料-指标多对多</text>
+  <rect x="560" y="222" width="490" height="55" rx="8" ry="8" fill="#FFFFFF" stroke="#455A64" stroke-width="1.5"/>
+  <text x="805" y="247" text-anchor="middle" font-size="17" font-weight="bold" fill="#263238">专家评审意见 + 指标体系</text>
+  <text x="805" y="267" text-anchor="middle" font-size="15" fill="#37474F">自由文本意见 · 一/二级指标 · 多对多</text>
 
-  <line x1="230" y1="200" x2="230" y2="230" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="550" y1="200" x2="550" y2="230" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="870" y1="200" x2="870" y2="410" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,3"/>
-  <line x1="1230" y1="200" x2="1230" y2="410" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="5,3"/>
+  <!-- 下行箭头（数据源 → 感知层/认知层/决策层）-->
+  <line x1="305" y1="290" x2="305" y2="315" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="805" y1="290" x2="805" y2="315" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="200" y1="290" x2="200" y2="540" stroke="#37474F" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="200" y1="540" x2="240" y2="540" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="950" y1="290" x2="950" y2="540" stroke="#37474F" stroke-width="2" stroke-dasharray="5,4"/>
+  <line x1="950" y1="540" x2="910" y2="540" stroke="#37474F" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <rect x="40" y="230" width="900" height="170" rx="12" ry="12" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
-  <rect x="40" y="230" width="140" height="30" rx="12" ry="12" fill="url(#gradPerception)"/>
-  <text x="110" y="251" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">感知层 · 研究内容一</text>
-  <text x="190" y="251" font-size="13" font-weight="bold" fill="#0D47A1">面向教育教学举证材料的多模态语义理解与结构化表征</text>
+  <!-- ========== 感知层 · 研究内容一 ========== -->
+  <rect x="30" y="315" width="1040" height="175" rx="12" ry="12" fill="#E3F2FD" stroke="#1976D2" stroke-width="2.5"/>
+  <rect x="30" y="315" width="180" height="36" rx="12" ry="12" fill="url(#gradPerception)"/>
+  <text x="120" y="340" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">感知层 · 研究内容一</text>
+  <text x="225" y="340" font-size="16" font-weight="bold" fill="#0D47A1">多模态举证材料语义理解与结构化表征</text>
 
-  <rect x="70" y="275" width="240" height="105" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.3"/>
-  <text x="190" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">PDF 版面解析与教学要素抽取</text>
-  <text x="190" y="320" text-anchor="middle" font-size="12" fill="#1565C0">· 教学目标 / 重难点 / 策略</text>
-  <text x="190" y="338" text-anchor="middle" font-size="12" fill="#1565C0">· 学情分析 / 板书与评价设计</text>
-  <text x="190" y="360" text-anchor="middle" font-size="11" fill="#546E7A">实体词典 + 抽取模型</text>
+  <rect x="55" y="365" width="320" height="110" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="215" y="390" text-anchor="middle" font-size="16" font-weight="bold" fill="#0D47A1">PDF 版面解析与要素抽取</text>
+  <text x="215" y="413" text-anchor="middle" font-size="14" fill="#1565C0">教学目标 / 重难点 / 教学策略</text>
+  <text x="215" y="434" text-anchor="middle" font-size="14" fill="#1565C0">学情分析 / 板书 / 评价设计</text>
+  <text x="215" y="460" text-anchor="middle" font-size="13" fill="#546E7A">实体词典 + 抽取模型</text>
 
-  <rect x="330" y="275" width="260" height="105" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.3"/>
-  <text x="460" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">微格视频三路融合解析</text>
-  <text x="460" y="320" text-anchor="middle" font-size="12" fill="#1565C0">· 行为识别(SlowFast/ViViT)</text>
-  <text x="460" y="338" text-anchor="middle" font-size="12" fill="#1565C0">· 语音转写(Whisper)</text>
-  <text x="460" y="360" text-anchor="middle" font-size="12" fill="#1565C0">· 板书/PPT 画面理解</text>
+  <rect x="390" y="365" width="320" height="110" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="550" y="390" text-anchor="middle" font-size="16" font-weight="bold" fill="#0D47A1">微格视频三路融合解析</text>
+  <text x="550" y="413" text-anchor="middle" font-size="14" fill="#1565C0">教师行为识别(SlowFast/ViViT)</text>
+  <text x="550" y="434" text-anchor="middle" font-size="14" fill="#1565C0">语音转写(Whisper)</text>
+  <text x="550" y="455" text-anchor="middle" font-size="14" fill="#1565C0">板书 / PPT 画面理解</text>
 
-  <rect x="610" y="275" width="310" height="105" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.3"/>
-  <text x="765" y="298" text-anchor="middle" font-size="13" font-weight="bold" fill="#0D47A1">教育领域多模态大模型适配</text>
-  <text x="765" y="320" text-anchor="middle" font-size="12" fill="#1565C0">基座:Qwen-VL / LLaVA / BLIP-2</text>
-  <text x="765" y="338" text-anchor="middle" font-size="12" fill="#1565C0">微调:LoRA / QLoRA + 指令对齐</text>
-  <text x="765" y="360" text-anchor="middle" font-size="12" fill="#1565C0">输出:结构化教学特征向量</text>
+  <rect x="725" y="365" width="320" height="110" rx="8" ry="8" fill="#FFFFFF" stroke="#1976D2" stroke-width="1.5"/>
+  <text x="885" y="390" text-anchor="middle" font-size="16" font-weight="bold" fill="#0D47A1">教育领域 MLLM 适配</text>
+  <text x="885" y="413" text-anchor="middle" font-size="14" fill="#1565C0">基座:Qwen-VL / LLaVA / BLIP-2</text>
+  <text x="885" y="434" text-anchor="middle" font-size="14" fill="#1565C0">微调:LoRA / QLoRA + 指令对齐</text>
+  <text x="885" y="455" text-anchor="middle" font-size="14" fill="#1565C0">输出:结构化教学特征向量</text>
 
-  <line x1="310" y1="325" x2="330" y2="325" stroke="#1976D2" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="590" y1="325" x2="610" y2="325" stroke="#1976D2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="375" y1="420" x2="390" y2="420" stroke="#1976D2" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="710" y1="420" x2="725" y2="420" stroke="#1976D2" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <line x1="490" y1="400" x2="490" y2="435" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="510" y="422" font-size="12" fill="#263238">结构化教学特征</text>
+  <!-- 感知层 → 认知层 -->
+  <line x1="550" y1="490" x2="550" y2="515" stroke="#37474F" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="575" y="508" font-size="14" fill="#263238">结构化教学特征</text>
 
-  <rect x="40" y="435" width="1420" height="200" rx="12" ry="12" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2"/>
-  <rect x="40" y="435" width="140" height="30" rx="12" ry="12" fill="url(#gradCognition)"/>
-  <text x="110" y="456" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">认知层 · 研究内容二</text>
-  <text x="190" y="456" font-size="13" font-weight="bold" fill="#4A148C">基于异构图与证据理论的师范生能力画像建模</text>
+  <!-- ========== 认知层 · 研究内容二 ========== -->
+  <rect x="30" y="515" width="1040" height="265" rx="12" ry="12" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2.5"/>
+  <rect x="30" y="515" width="180" height="36" rx="12" ry="12" fill="url(#gradCognition)"/>
+  <text x="120" y="540" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">认知层 · 研究内容二</text>
+  <text x="225" y="540" font-size="16" font-weight="bold" fill="#4A148C">基于异构图与证据理论的能力画像建模</text>
 
-  <rect x="70" y="480" width="320" height="140" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.3"/>
-  <text x="230" y="505" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">五元异构信息图构建</text>
-  <text x="230" y="528" text-anchor="middle" font-size="12" fill="#6A1B9A">节点:学生 / 举证材料 / 指标 /</text>
-  <text x="230" y="546" text-anchor="middle" font-size="12" fill="#6A1B9A">      专家 / 评分·意见</text>
-  <text x="230" y="569" text-anchor="middle" font-size="12" fill="#6A1B9A">边:材料-指标多对多、专家评审</text>
-  <text x="230" y="592" text-anchor="middle" font-size="11" fill="#546E7A">直接复用已有系统业务关系</text>
+  <!-- 2×2 排列子模块 -->
+  <rect x="55" y="565" width="490" height="95" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="300" y="590" text-anchor="middle" font-size="16" font-weight="bold" fill="#4A148C">五元异构信息图构建</text>
+  <text x="300" y="614" text-anchor="middle" font-size="14" fill="#6A1B9A">节点:学生 / 举证材料 / 指标 / 专家 / 评分·意见</text>
+  <text x="300" y="635" text-anchor="middle" font-size="14" fill="#6A1B9A">边:材料-指标多对多 · 专家评审关系</text>
+  <text x="300" y="655" text-anchor="middle" font-size="13" fill="#546E7A">直接复用已有系统业务关系</text>
 
-  <rect x="410" y="480" width="310" height="140" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.3"/>
-  <text x="565" y="505" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">异构图注意力网络表征学习</text>
-  <text x="565" y="528" text-anchor="middle" font-size="12" fill="#6A1B9A">HAN / MAGNN / R-GCN</text>
-  <text x="565" y="551" text-anchor="middle" font-size="12" fill="#6A1B9A">多源特征跨类型传播</text>
-  <text x="565" y="575" text-anchor="middle" font-size="12" fill="#6A1B9A">学生节点最终表征</text>
-  <text x="565" y="598" text-anchor="middle" font-size="11" fill="#546E7A">聚合材料语义 + 分数 + 意见</text>
+  <rect x="560" y="565" width="490" height="95" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="805" y="590" text-anchor="middle" font-size="16" font-weight="bold" fill="#4A148C">异构图注意力网络表征学习</text>
+  <text x="805" y="614" text-anchor="middle" font-size="14" fill="#6A1B9A">HAN / MAGNN / R-GCN 多源特征传播</text>
+  <text x="805" y="635" text-anchor="middle" font-size="14" fill="#6A1B9A">学生节点聚合材料语义 + 分数 + 意见</text>
+  <text x="805" y="655" text-anchor="middle" font-size="13" fill="#546E7A">最终得到统一的学生表征</text>
 
-  <rect x="740" y="480" width="320" height="140" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.3"/>
-  <text x="900" y="505" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">D-S 证据融合 + 方面级情感分析</text>
-  <text x="900" y="528" text-anchor="middle" font-size="12" fill="#6A1B9A">Dempster-Shafer 证据理论</text>
-  <text x="900" y="551" text-anchor="middle" font-size="12" fill="#6A1B9A">量化多专家一致性 / 冲突度</text>
-  <text x="900" y="575" text-anchor="middle" font-size="12" fill="#6A1B9A">ABSA 抽取意见细粒度观点</text>
-  <text x="900" y="598" text-anchor="middle" font-size="11" fill="#546E7A">映射至具体指标维度</text>
+  <rect x="55" y="670" width="490" height="95" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="300" y="695" text-anchor="middle" font-size="16" font-weight="bold" fill="#4A148C">D-S 证据融合 + 方面级情感分析</text>
+  <text x="300" y="719" text-anchor="middle" font-size="14" fill="#6A1B9A">Dempster-Shafer 量化多专家一致性/冲突</text>
+  <text x="300" y="740" text-anchor="middle" font-size="14" fill="#6A1B9A">ABSA 将评审意见映射至指标维度</text>
+  <text x="300" y="760" text-anchor="middle" font-size="13" fill="#546E7A">补齐纯分数无法刻画的语义</text>
 
-  <rect x="1080" y="480" width="360" height="140" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.3"/>
-  <text x="1260" y="505" text-anchor="middle" font-size="13" font-weight="bold" fill="#4A148C">多维能力画像(含置信度)</text>
-  <text x="1260" y="528" text-anchor="middle" font-size="12" fill="#6A1B9A">教学设计 / 课堂实施 / 信息化融合</text>
-  <text x="1260" y="551" text-anchor="middle" font-size="12" fill="#6A1B9A">教学反思 / 教育情怀等</text>
-  <text x="1260" y="575" text-anchor="middle" font-size="12" fill="#6A1B9A">"主张值 + 置信度" 可解释画像</text>
-  <text x="1260" y="598" text-anchor="middle" font-size="11" fill="#546E7A">Kappa >= 0.75 · 与专家相关 >= 0.80</text>
+  <rect x="560" y="670" width="490" height="95" rx="8" ry="8" fill="#FFFFFF" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="805" y="695" text-anchor="middle" font-size="16" font-weight="bold" fill="#4A148C">多维能力画像(含置信度)</text>
+  <text x="805" y="719" text-anchor="middle" font-size="14" fill="#6A1B9A">教学设计/课堂实施/信息化融合/教学反思</text>
+  <text x="805" y="740" text-anchor="middle" font-size="14" fill="#6A1B9A">"主张值 + 置信度" 可解释画像</text>
+  <text x="805" y="760" text-anchor="middle" font-size="13" fill="#546E7A">Kappa ≥ 0.75 · 与专家相关 ≥ 0.80</text>
 
-  <line x1="390" y1="550" x2="410" y2="550" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="720" y1="550" x2="740" y2="550" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="1060" y1="550" x2="1080" y2="550" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="545" y1="613" x2="560" y2="613" stroke="#7B1FA2" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="545" y1="718" x2="560" y2="718" stroke="#7B1FA2" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="300" y1="660" x2="300" y2="670" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="805" y1="660" x2="805" y2="670" stroke="#7B1FA2" stroke-width="2" marker-end="url(#arrow)"/>
 
-  <line x1="750" y1="635" x2="750" y2="670" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="770" y="657" font-size="12" fill="#263238">多维能力画像向量</text>
+  <!-- 认知层 → 决策层 -->
+  <line x1="550" y1="780" x2="550" y2="810" stroke="#37474F" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="575" y="803" font-size="14" fill="#263238">多维能力画像向量</text>
 
-  <rect x="40" y="670" width="1420" height="210" rx="12" ry="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
-  <rect x="40" y="670" width="140" height="30" rx="12" ry="12" fill="url(#gradDecision)"/>
-  <text x="110" y="691" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">决策层 · 研究内容三</text>
-  <text x="190" y="691" font-size="13" font-weight="bold" fill="#BF360C">教育领域可追溯多智能体协同与可信推荐</text>
+  <!-- ========== 决策层 · 研究内容三 ========== -->
+  <rect x="30" y="810" width="1040" height="310" rx="12" ry="12" fill="#FFF3E0" stroke="#E65100" stroke-width="2.5"/>
+  <rect x="30" y="810" width="180" height="36" rx="12" ry="12" fill="url(#gradDecision)"/>
+  <text x="120" y="835" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">决策层 · 研究内容三</text>
+  <text x="225" y="835" font-size="16" font-weight="bold" fill="#BF360C">教育领域可追溯多智能体协同与可信推荐</text>
 
-  <rect x="70" y="715" width="300" height="150" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.3"/>
-  <text x="220" y="740" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C">教育岗位能力知识图谱</text>
-  <text x="220" y="763" text-anchor="middle" font-size="12" fill="#D84315">节点:学段(幼 / 小 / 中)</text>
-  <text x="220" y="783" text-anchor="middle" font-size="12" fill="#D84315">      学科(语文 / 数学 / 信息科技…)</text>
-  <text x="220" y="803" text-anchor="middle" font-size="12" fill="#D84315">      岗位(学科教师 / 班主任 / 教研员)</text>
-  <text x="220" y="823" text-anchor="middle" font-size="12" fill="#D84315">关系:能力维度 -> 岗位需求</text>
-  <text x="220" y="848" text-anchor="middle" font-size="11" fill="#546E7A">>= 3000 实体 · >= 1 万关系</text>
+  <!-- 左：知识图谱 -->
+  <rect x="55" y="860" width="300" height="240" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.5"/>
+  <text x="205" y="888" text-anchor="middle" font-size="16" font-weight="bold" fill="#BF360C">教育岗位能力知识图谱</text>
+  <text x="205" y="916" text-anchor="middle" font-size="14" fill="#D84315">节点:</text>
+  <text x="205" y="938" text-anchor="middle" font-size="14" fill="#D84315">· 学段(幼 / 小 / 中)</text>
+  <text x="205" y="960" text-anchor="middle" font-size="14" fill="#D84315">· 学科(语文 / 数学 / 信息科技…)</text>
+  <text x="205" y="982" text-anchor="middle" font-size="14" fill="#D84315">· 岗位(学科教师 / 班主任 / 教研员)</text>
+  <text x="205" y="1015" text-anchor="middle" font-size="14" fill="#D84315">关系:能力维度 → 岗位需求</text>
+  <text x="205" y="1050" text-anchor="middle" font-size="14" fill="#546E7A">规模:≥ 3000 实体</text>
+  <text x="205" y="1072" text-anchor="middle" font-size="14" fill="#546E7A">           ≥ 1 万条关系</text>
 
-  <rect x="400" y="715" width="660" height="150" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.3"/>
-  <text x="730" y="738" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C">多智能体协同工作流(Planner - Executor - Reviewer)</text>
+  <!-- 中：多智能体 -->
+  <rect x="370" y="860" width="400" height="240" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.5"/>
+  <text x="570" y="885" text-anchor="middle" font-size="16" font-weight="bold" fill="#BF360C">多智能体协同工作流</text>
+  <text x="570" y="908" text-anchor="middle" font-size="14" fill="#BF360C" font-style="italic">Planner - Executor - Reviewer</text>
 
-  <rect x="420" y="755" width="190" height="95" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
-  <text x="515" y="776" text-anchor="middle" font-size="12" font-weight="bold" fill="#BF360C">规划 Agent (Planner)</text>
-  <text x="515" y="796" text-anchor="middle" font-size="11" fill="#4E342E">画像解析 + 任务分解</text>
-  <text x="515" y="815" text-anchor="middle" font-size="11" fill="#4E342E">制定检索与推荐策略</text>
-  <text x="515" y="836" text-anchor="middle" font-size="11" fill="#795548">(ReAct / CoT)</text>
+  <rect x="385" y="925" width="370" height="48" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
+  <text x="405" y="952" font-size="15" font-weight="bold" fill="#BF360C">规划 Agent</text>
+  <text x="500" y="952" font-size="14" fill="#4E342E">(Planner)·画像解析+任务分解</text>
 
-  <rect x="635" y="755" width="190" height="95" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
-  <text x="730" y="776" text-anchor="middle" font-size="12" font-weight="bold" fill="#BF360C">执行 Agent (Executor)</text>
-  <text x="730" y="796" text-anchor="middle" font-size="11" fill="#4E342E">RAG over 领域 KG</text>
-  <text x="730" y="815" text-anchor="middle" font-size="11" fill="#4E342E">工具调用 · 候选岗位匹配</text>
-  <text x="730" y="836" text-anchor="middle" font-size="11" fill="#795548">(函数调用 + 检索增强)</text>
+  <rect x="385" y="980" width="370" height="48" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
+  <text x="405" y="1007" font-size="15" font-weight="bold" fill="#BF360C">执行 Agent</text>
+  <text x="500" y="1007" font-size="14" fill="#4E342E">(Executor)·RAG over 领域 KG</text>
 
-  <rect x="850" y="755" width="190" height="95" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
-  <text x="945" y="776" text-anchor="middle" font-size="12" font-weight="bold" fill="#BF360C">反思 Agent (Reviewer)</text>
-  <text x="945" y="796" text-anchor="middle" font-size="11" fill="#4E342E">证据完备性 / 一致性审核</text>
-  <text x="945" y="815" text-anchor="middle" font-size="11" fill="#4E342E">不通过则回退重算</text>
-  <text x="945" y="836" text-anchor="middle" font-size="11" fill="#795548">(Reflexion)</text>
+  <rect x="385" y="1035" width="370" height="48" rx="6" ry="6" fill="#FFE0B2" stroke="#E65100" stroke-width="1"/>
+  <text x="405" y="1062" font-size="15" font-weight="bold" fill="#BF360C">反思 Agent</text>
+  <text x="500" y="1062" font-size="14" fill="#4E342E">(Reviewer)·证据/一致性审核</text>
 
-  <line x1="610" y1="802" x2="635" y2="802" stroke="#BF360C" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <line x1="825" y1="802" x2="850" y2="802" stroke="#BF360C" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <path d="M 945 755 Q 945 725 730 725 Q 515 725 515 755" stroke="#BF360C" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
-  <text x="730" y="722" text-anchor="middle" font-size="11" fill="#BF360C" font-style="italic">反馈 · 再规划</text>
+  <!-- Agent间流转箭头 -->
+  <line x1="570" y1="973" x2="570" y2="980" stroke="#BF360C" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="570" y1="1028" x2="570" y2="1035" stroke="#BF360C" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 760 1059 Q 790 1059 790 990 Q 790 949 760 949" stroke="#BF360C" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <text x="830" y="1003" font-size="12" fill="#BF360C" font-style="italic">不通过</text>
+  <text x="830" y="1020" font-size="12" fill="#BF360C" font-style="italic">则回退</text>
 
-  <line x1="370" y1="802" x2="420" y2="802" stroke="#BF360C" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- KG → 多智能体 -->
+  <line x1="355" y1="975" x2="385" y2="975" stroke="#BF360C" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <rect x="1090" y="715" width="350" height="150" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.3"/>
-  <text x="1265" y="740" text-anchor="middle" font-size="13" font-weight="bold" fill="#BF360C">可追溯职业发展建议</text>
-  <text x="1265" y="763" text-anchor="middle" font-size="12" fill="#D84315">Top-K 岗位方向 · 附置信度</text>
-  <text x="1265" y="786" text-anchor="middle" font-size="12" fill="#D84315">证据溯源:材料 + 指标 + 专家意见</text>
-  <text x="1265" y="809" text-anchor="middle" font-size="12" fill="#D84315">思维链(CoT)可审计推理过程</text>
-  <text x="1265" y="832" text-anchor="middle" font-size="12" fill="#D84315">人机协同修订 · 闭环再学习</text>
-  <text x="1265" y="853" text-anchor="middle" font-size="11" fill="#546E7A">Top-3 命中率 >= 85% · 可追溯率 100%</text>
+  <!-- 右：推荐输出 -->
+  <rect x="785" y="860" width="265" height="240" rx="8" ry="8" fill="#FFFFFF" stroke="#E65100" stroke-width="1.5"/>
+  <text x="917" y="888" text-anchor="middle" font-size="16" font-weight="bold" fill="#BF360C">可追溯职业发展建议</text>
+  <text x="917" y="920" text-anchor="middle" font-size="14" fill="#D84315">Top-K 岗位方向</text>
+  <text x="917" y="942" text-anchor="middle" font-size="14" fill="#D84315">(附置信度)</text>
+  <text x="917" y="975" text-anchor="middle" font-size="14" fill="#D84315">证据溯源:</text>
+  <text x="917" y="997" text-anchor="middle" font-size="14" fill="#D84315">材料 + 指标 + 意见</text>
+  <text x="917" y="1030" text-anchor="middle" font-size="14" fill="#D84315">CoT 可审计推理</text>
+  <text x="917" y="1060" text-anchor="middle" font-size="13" fill="#546E7A">Top-3 命中率 ≥ 85%</text>
+  <text x="917" y="1082" text-anchor="middle" font-size="13" fill="#546E7A">可追溯率 100%</text>
 
-  <line x1="1040" y1="802" x2="1090" y2="802" stroke="#BF360C" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="770" y1="975" x2="785" y2="975" stroke="#BF360C" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-  <line x1="750" y1="880" x2="750" y2="910" stroke="#37474F" stroke-width="2.5" marker-end="url(#arrow)"/>
-  <text x="770" y="900" font-size="12" fill="#263238">画像与建议 API</text>
+  <!-- 决策层 → 应用层 -->
+  <line x1="550" y1="1120" x2="550" y2="1150" stroke="#37474F" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="575" y="1143" font-size="14" fill="#263238">画像与建议 API</text>
 
-  <rect x="40" y="910" width="1420" height="170" rx="12" ry="12" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
-  <rect x="40" y="910" width="170" height="30" rx="12" ry="12" fill="url(#gradApp)"/>
-  <text x="125" y="931" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">应用层 · 系统集成与试点</text>
-  <text x="220" y="931" font-size="13" font-weight="bold" fill="#1B5E20">以微服务形式嵌入已研发师范生教育教学能力认定抽检系统</text>
+  <!-- ========== 应用层 ========== -->
+  <rect x="30" y="1150" width="1040" height="270" rx="12" ry="12" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2.5"/>
+  <rect x="30" y="1150" width="220" height="36" rx="12" ry="12" fill="url(#gradApp)"/>
+  <text x="140" y="1175" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">应用层 · 系统集成与试点</text>
+  <text x="265" y="1175" font-size="16" font-weight="bold" fill="#1B5E20">以微服务形式嵌入已研发认定抽检系统</text>
 
-  <rect x="70" y="960" width="320" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.3"/>
-  <text x="230" y="985" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">画像智能体微服务</text>
-  <text x="230" y="1008" text-anchor="middle" font-size="12" fill="#2E7D32">REST API · 独立部署 · 可扩展</text>
-  <text x="230" y="1028" text-anchor="middle" font-size="12" fill="#2E7D32">与已有认定抽检系统无缝对接</text>
-  <text x="230" y="1048" text-anchor="middle" font-size="11" fill="#546E7A">接口月均可用率 >= 99.5%</text>
+  <rect x="55" y="1200" width="490" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="300" y="1226" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">画像智能体微服务</text>
+  <text x="300" y="1252" text-anchor="middle" font-size="14" fill="#2E7D32">REST API · 独立部署 · 可扩展</text>
+  <text x="300" y="1274" text-anchor="middle" font-size="14" fill="#2E7D32">与已有认定抽检系统无缝对接</text>
+  <text x="300" y="1294" text-anchor="middle" font-size="13" fill="#546E7A">接口月均可用率 ≥ 99.5%</text>
 
-  <rect x="410" y="960" width="450" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.3"/>
-  <text x="635" y="985" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">三类角色前端页面</text>
-  <text x="635" y="1008" text-anchor="middle" font-size="12" fill="#2E7D32">师范生端:个人多维画像 + Top-K 职业方向建议</text>
-  <text x="635" y="1028" text-anchor="middle" font-size="12" fill="#2E7D32">学院 / 评估院端:区域能力结构热力图 + 咨询报告</text>
-  <text x="635" y="1048" text-anchor="middle" font-size="12" fill="#2E7D32">评审专家端:证据链审阅 + 推荐复核修订</text>
+  <rect x="560" y="1200" width="490" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="805" y="1226" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">三类角色前端页面</text>
+  <text x="805" y="1251" text-anchor="middle" font-size="14" fill="#2E7D32">师范生端:画像 + Top-K 职业建议</text>
+  <text x="805" y="1272" text-anchor="middle" font-size="14" fill="#2E7D32">学院/评估院端:区域能力热力图+咨询报告</text>
+  <text x="805" y="1293" text-anchor="middle" font-size="14" fill="#2E7D32">专家端:证据链审阅+推荐复核</text>
 
-  <rect x="880" y="960" width="560" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.3"/>
-  <text x="1160" y="985" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">对接区域战略 · 试点推广</text>
-  <text x="1160" y="1008" text-anchor="middle" font-size="12" fill="#2E7D32">首批试点协作区:江津区 · >= 3 所高校 · >= 1500 名师范生</text>
-  <text x="1160" y="1028" text-anchor="middle" font-size="12" fill="#2E7D32">推广方向:渝东北三峡库区 / 渝东南武陵山区代表性区县</text>
-  <text x="1160" y="1048" text-anchor="middle" font-size="12" fill="#2E7D32">服务:成渝双城经济圈 · 长江经济带 · 教育强市区县行</text>
+  <rect x="55" y="1310" width="995" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+  <text x="552" y="1336" text-anchor="middle" font-size="16" font-weight="bold" fill="#1B5E20">对接区域战略 · 试点推广</text>
+  <text x="552" y="1361" text-anchor="middle" font-size="14" fill="#2E7D32">首批试点协作区:江津区 · ≥ 3 所高校 · ≥ 1500 名师范生</text>
+  <text x="552" y="1382" text-anchor="middle" font-size="14" fill="#2E7D32">推广方向:渝东北三峡库区 / 渝东南武陵山区代表性区县</text>
+  <text x="552" y="1403" text-anchor="middle" font-size="14" fill="#2E7D32">服务:成渝双城经济圈 · 长江经济带 · 教育强市区县行</text>
 
-  <rect x="40" y="1095" width="1420" height="145" rx="12" ry="12" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
-  <rect x="40" y="1095" width="170" height="30" rx="12" ry="12" fill="#C62828"/>
-  <text x="125" y="1116" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">评估验证 · 贯穿全链路</text>
-  <text x="220" y="1116" font-size="13" font-weight="bold" fill="#B71C1C">五层次实验方案:真实数据 · 基线对比 · 消融实验 · 专家盲评 · 真实试点</text>
+  <!-- ========== 评估验证 ========== -->
+  <rect x="30" y="1440" width="1040" height="235" rx="12" ry="12" fill="#FFEBEE" stroke="#C62828" stroke-width="2.5"/>
+  <rect x="30" y="1440" width="220" height="36" rx="12" ry="12" fill="#C62828"/>
+  <text x="140" y="1465" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">评估验证 · 贯穿全链路</text>
+  <text x="265" y="1465" font-size="15" font-weight="bold" fill="#B71C1C">真实数据 · 基线对比 · 消融 · 专家盲评 · 真实试点</text>
 
-  <rect x="70" y="1140" width="330" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.2"/>
-  <text x="235" y="1162" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">基线对比 + 消融</text>
-  <text x="235" y="1183" text-anchor="middle" font-size="11" fill="#C62828">CLIP / Qwen-VL / GPT-4V vs. 本项目</text>
-  <text x="235" y="1202" text-anchor="middle" font-size="11" fill="#C62828">GCN / GAT / HAN vs. 异构图 + D-S 融合</text>
-  <text x="235" y="1220" text-anchor="middle" font-size="11" fill="#C62828">消融各组件以量化贡献度</text>
+  <rect x="55" y="1490" width="490" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.5"/>
+  <text x="300" y="1515" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">基线对比 + 消融实验</text>
+  <text x="300" y="1540" text-anchor="middle" font-size="13" fill="#C62828">CLIP / Qwen-VL / GPT-4V vs. 本项目</text>
+  <text x="300" y="1560" text-anchor="middle" font-size="13" fill="#C62828">GCN / GAT / HAN vs. 异构图 + D-S 融合</text>
 
-  <rect x="420" y="1140" width="330" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.2"/>
-  <text x="585" y="1162" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">专家盲评</text>
-  <text x="585" y="1183" text-anchor="middle" font-size="11" fill="#C62828">>= 10 位一线教师教育专家</text>
-  <text x="585" y="1202" text-anchor="middle" font-size="11" fill="#C62828">Likert 五级量表 · 四维度评价</text>
-  <text x="585" y="1220" text-anchor="middle" font-size="11" fill="#C62828">画像合理性 / 证据充分性 / 契合度 / 可解释性</text>
+  <rect x="560" y="1490" width="490" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.5"/>
+  <text x="805" y="1515" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">专家盲评</text>
+  <text x="805" y="1540" text-anchor="middle" font-size="13" fill="#C62828">≥ 10 位一线教师教育专家 · Likert 五级量表</text>
+  <text x="805" y="1560" text-anchor="middle" font-size="13" fill="#C62828">画像合理性 / 证据充分性 / 契合度 / 可解释性</text>
 
-  <rect x="770" y="1140" width="330" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.2"/>
-  <text x="935" y="1162" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">真实场景试点</text>
-  <text x="935" y="1183" text-anchor="middle" font-size="11" fill="#C62828">>= 3 所高校 · >= 1500 名师范生</text>
-  <text x="935" y="1202" text-anchor="middle" font-size="11" fill="#C62828">>= 1 个完整认定年度 · 综合满意度 >= 85%</text>
-  <text x="935" y="1220" text-anchor="middle" font-size="11" fill="#C62828">区县级咨询报告 >= 2 份</text>
+  <rect x="55" y="1585" width="490" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.5"/>
+  <text x="300" y="1610" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">真实场景试点</text>
+  <text x="300" y="1635" text-anchor="middle" font-size="13" fill="#C62828">≥ 3 所高校 · ≥ 1500 名师范生 · ≥ 1 个认定年度</text>
+  <text x="300" y="1655" text-anchor="middle" font-size="13" fill="#C62828">综合满意度 ≥ 85% · 区县级咨询报告 ≥ 2 份</text>
 
-  <rect x="1120" y="1140" width="320" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.2"/>
-  <text x="1280" y="1162" text-anchor="middle" font-size="12" font-weight="bold" fill="#B71C1C">数据合规与伦理</text>
-  <text x="1280" y="1183" text-anchor="middle" font-size="11" fill="#C62828">严格脱敏 + 数据最小化</text>
-  <text x="1280" y="1202" text-anchor="middle" font-size="11" fill="#C62828">操作审计 + 访问权限控制</text>
-  <text x="1280" y="1220" text-anchor="middle" font-size="11" fill="#C62828">人机协同修订保留人工裁量</text>
+  <rect x="560" y="1585" width="490" height="85" rx="8" ry="8" fill="#FFFFFF" stroke="#C62828" stroke-width="1.5"/>
+  <text x="805" y="1610" text-anchor="middle" font-size="16" font-weight="bold" fill="#B71C1C">数据合规与伦理</text>
+  <text x="805" y="1635" text-anchor="middle" font-size="13" fill="#C62828">严格脱敏 + 数据最小化 + 操作审计</text>
+  <text x="805" y="1655" text-anchor="middle" font-size="13" fill="#C62828">人机协同修订 · 保留人工最终裁量权</text>
 </svg>
