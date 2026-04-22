@@ -343,7 +343,16 @@ plt.subplots_adjust(left=0.01, right=0.99, top=0.98, bottom=0.045)
 
 out_png = '/workspace/technical_roadmap_simple.png'
 out_pdf = '/workspace/technical_roadmap_simple.pdf'
+out_svg = '/workspace/technical_roadmap_simple.svg'
+out_emf = '/workspace/technical_roadmap_simple.emf'
 plt.savefig(out_png, dpi=220, bbox_inches='tight', facecolor='white')
 plt.savefig(out_pdf, bbox_inches='tight', facecolor='white')
+plt.savefig(out_svg, bbox_inches='tight', facecolor='white')
+try:
+    plt.savefig(out_emf, bbox_inches='tight', facecolor='white')
+    print('Saved:', out_emf)
+except Exception as e:
+    print('EMF skipped:', e)
 print('Saved:', out_png)
 print('Saved:', out_pdf)
+print('Saved:', out_svg)
